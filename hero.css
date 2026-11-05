@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  min-height: 100svh;
+  overflow: hidden;
+  color: #fff3e1;
+  background: #392419 url("img/abertura.webp") center / cover no-repeat;
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, #1c100ba8 0%, #1c100b55 56%, #1c100b38 100%);
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-block: 64px;
+  text-align: center;
+}
+.hero h1 {
+  margin: .13em 0 .1em;
+  font: 400 clamp(3.65rem, 12vw, 10rem)/.92 Georgia, serif;
+  letter-spacing: -.065em;
+}
+.hero-description {
+  font-size: clamp(.84rem, 1.35vw, 1rem);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: clamp(18px, 3vw, 30px);
+}
+.hero-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 8px clamp(12px, 2vw, 22px);
+  border: 1px solid #f1d6b4;
+  border-radius: 100px;
+  color: #fff3e1;
+  background: #27150ecc;
+  font-size: .8rem;
+  text-decoration: none;
+}
+.hero-action:hover { background: #4b2d23; }
+.hero-action-primary { background: #f5dfc3; color: #301a16; }
+.hero-action-primary:hover { background: #fff2e1; }
+.hero-action:focus-visible { outline-color: #fff3e1; }
+
+@media (max-width: 520px) {
+  .hero-content { padding-inline: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-video { display: none; }
+}
+
+.hero-nav {
+  position: absolute;
+  z-index: 2;
+  top: max(12px, env(safe-area-inset-top));
+  inset-inline: 0;
+  justify-content: center;
+  gap: clamp(16px, 4vw, 48px);
+  color: #fff3e1;
+  text-shadow: 0 1px 5px #27150e;
+}
+
+.hero.hero-opening {
+  position: fixed;
+  z-index: 20;
+  inset-inline: 0;
+  pointer-events: none;
+}

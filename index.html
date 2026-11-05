@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariazinha Bar e Comida Brasileira | Tamarineira, Recife</title>
+<meta name="description" content="Conheça o Mariazinha Bar e Comida Brasileira na Tamarineira, Recife. Explore uma seleção do cardápio e planeje sua visita.">
+<meta name="robots" content="noindex,nofollow"><meta property="og:title" content="Mariazinha Bar e Comida Brasileira">
+<meta name="theme-color" content="#a53e61"><link rel="icon" href="img/logo.webp"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hero.css"><link rel="stylesheet" href="menu.css"><script src="app.js" defer></script><script src="menu.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<div class="hero-frame">
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <video class="hero-video" poster="img/abertura.webp" muted playsinline loop preload="none" aria-hidden="true">
+    <source src="img/abertura.mp4" type="video/mp4">
+  </video>
+  <nav class="hero-nav" aria-label="Navegação principal"><a href="#casa">A casa</a><a href="#cardapio">Cardápio</a><a href="#reserva">Reserva</a><a class="hero-bag" href="#cardapio" aria-label="Abrir sacola de pedidos"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg><span data-bag-count hidden></span></a></nav>
+  <div class="hero-content wrap">
+    <h1 id="hero-title">Mariazinha</h1>
+    <p class="hero-description">Bar e comida brasileira</p>
+    <div class="hero-actions">
+      <a class="hero-action hero-action-primary" href="#cardapio">Acessar cardápio <span aria-hidden="true">↗</span></a>
+      <a class="hero-action" href="#casa">Conhecer a nossa casa <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+</section>
+</div>
+<div id="site-content">
+<main id="conteudo">
+<section class="house" id="casa" tabindex="-1" aria-labelledby="house-title">
+  <div class="wrap house-grid">
+    <div class="house-intro" aria-live="polite">
+      <h2 id="house-title">Por dentro do Mariazinha</h2>
+      <p>Na Tamarineira, um bar de comida brasileira para almoçar e dividir petiscos.</p>
+    </div>
+    <div class="house-media" id="house-media">
+      <video muted playsinline preload="none" width="1280" height="720" poster="img/ambiente-poster.webp" aria-label="Vídeo do ambiente do Mariazinha"><source src="img/ambiente.mp4" type="video/mp4"></video>
+    </div>
+    <button class="button house-switch" type="button" aria-controls="house-media" hidden>Área Kids</button>
+  </div>
+</section>
+<section class="menu" id="cardapio" tabindex="-1" aria-labelledby="menu-title">
+  <div class="menu-app" data-view="gallery">
+    <h2 id="menu-title" class="menu-title">Cardápio</h2>
+    <div class="menu-modes" hidden aria-label="Visualização do cardápio">
+      <button type="button" aria-pressed="true" data-mode="gallery">Destaques</button>
+      <button type="button" aria-pressed="false" data-mode="list">Todos os pratos</button>
+      <button type="button" aria-pressed="false" data-mode="drinks">Bebidas</button>
+      <button type="button" class="menu-bag-button" aria-label="Sacola de pedidos" aria-controls="menu-bag" aria-pressed="false" data-mode="bag">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg><span data-bag-count hidden></span>
+      </button>
+    </div>
+    <div class="menu-bag" id="menu-bag" hidden>
+      <h3>Sacola de pedidos</h3>
+      <p class="bag-empty">Sua sacola está vazia.</p>
+      <ul class="bag-items" aria-label="Itens da sacola"></ul>
+      <p class="bag-total" hidden>Subtotal <strong></strong></p>
+      <p class="bag-demo">Prévia de pedidos. Envio e pagamento serão habilitados em uma próxima etapa.</p>
+    </div>
+    <p class="bag-announcement" role="status"></p>
+    <div class="menu-drinks" hidden>
+      <ul class="drink-grid" aria-label="Cardápio de bebidas">
+        <li class="drink-card">
+          <div><h3>Água mineral</h3><p class="drink-price">R$ 6,00</p></div>
+        </li>
+        <li class="drink-card">
+          <img src="img/bebida-coca-cola.webp" alt="" width="88" height="88" loading="lazy">
+          <div><h3>Coca-Cola Original</h3><p>Lata 350 ml</p><p class="drink-price">R$ 10,01</p></div>
+        </li>
+        <li class="drink-card">
+          <img src="img/bebida-fanta-laranja.webp" alt="" width="88" height="88" loading="lazy">
+          <div><h3>Fanta Laranja</h3><p>Lata 350 ml</p><p class="drink-price">R$ 10,00</p></div>
+        </li>
+        <li class="drink-card">
+          <img src="img/bebida-heineken-zero.webp" alt="" width="88" height="88" loading="lazy">
+          <div><h3>Heineken 0.0 Long Neck</h3><p>Sem álcool</p><p class="drink-price">R$ 12,99</p></div>
+        </li>
+        <li class="drink-card">
+          <img src="img/bebida-heineken-promocao.webp" alt="" width="88" height="88" loading="lazy">
+          <div><h3>Promoção de 4 Heineken Long Neck</h3><p class="drink-price"><del>R$ 44,00</del> R$ 39,99</p></div>
+        </li>
+        <li class="drink-card">
+          <img src="img/bebida-guarana.webp" alt="" width="88" height="88" loading="lazy">
+          <div><h3>Guaraná Antarctica</h3><p>Lata 350 ml</p><p class="drink-price">R$ 10,00</p></div>
+        </li>
+        <li class="drink-card">
+          <img src="img/bebida-sprite.webp" alt="" width="88" height="88" loading="lazy">
+          <div><h3>Sprite</h3><p>350 ml</p><p class="drink-price">R$ 10,00</p></div>
+        </li>
+        <li class="drink-card">
+          <div><h3>Água mineral com gás</h3><p class="drink-price">R$ 7,00</p></div>
+        </li>
+      </ul>
+    </div>
+    <div class="menu-gallery" hidden>
+      <div class="menu-reel" aria-label="Pratos em destaque">
+        <div class="menu-plates" aria-hidden="true"></div>
+        <button class="menu-plate-open" type="button" aria-label="Ver detalhes do prato em destaque"></button>
+      </div>
+      <div class="menu-current" aria-live="polite" aria-atomic="true">
+        <h3></h3><p class="eyebrow"></p><p class="menu-price"></p>
+        <button class="button menu-add gallery-add" type="button" hidden>Adicionar à sacola</button>
+        <button class="menu-view-details" type="button">Ver detalhes <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <div class="menu-details" hidden>
+      <img class="menu-detail-photo" alt="" hidden>
+      <button class="menu-back" type="button" aria-label="Voltar aos pratos">←</button>
+      <p class="eyebrow"></p>
+      <h3 tabindex="-1"></h3>
+      <p class="menu-detail-description"></p>
+      <p class="menu-price"></p>
+      <button class="button menu-add detail-add" type="button" hidden>Adicionar à sacola</button>
+      <a class="line-link menu-delivery" href="https://www.ifood.com.br/delivery/recife-pe/mariazinha-bar-e-comida-brasileira-tamarineira/d226dea8-a295-466f-8296-2f18efc81737">Ver no iFood ↗</a>
+    </div>
+    <div class="dishes menu-dishes">
+<article class="dish"><img src="img/espaguete-prato.webp" alt="" width="768" height="768" style="clip-path: ellipse(47.5% 47.1% at 50% 50%)" loading="lazy"><p class="eyebrow">Individual</p><h3>Espaguete de camarão</h3><p>Ao molho de três queijos, com lascas de parmesão. Serve 1 pessoa.</p><p class="dish-price">R$ 44,00</p></article>
+<article class="dish" data-list-only><img src="img/moqueca.webp" alt="" width="600" height="550" loading="lazy"><p class="eyebrow">Individual</p><h3>Moqueca vegana individual</h3><p>Com banana-da-terra dourada, tomate e pimentões. Serve 1 pessoa.</p><p class="dish-price">R$ 56,80</p></article>
+<article class="dish"><img src="img/filet-kids.webp" alt="" width="768" height="768" loading="lazy" style="clip-path: ellipse(47.3% 47.1% at 50% 50%)"><p class="eyebrow">Individual</p><h3>Filet kids</h3><p>Filé bovino em cubos, espaguete na manteiga e batatas fritas.</p><p class="dish-price">R$ 42,00</p></article>
+<article class="dish"><img src="img/pescada-amarela.webp" alt="" width="768" height="768" loading="lazy" style="clip-path: ellipse(46.1% 45.8% at 50% 50%)"><p class="eyebrow">Individual</p><h3>Filé de pescada amarela</h3><p>Com arroz branco e batata palito.</p><p class="dish-price">R$ 57,00</p></article>
+<article class="dish"><img src="img/prato-foto-05.webp" alt="" width="640" height="640" style="clip-path: ellipse(48% 48.4% at 50% 51%)" loading="lazy"><p class="eyebrow">Saladas</p><h3>Salada de camarão empanado</h3><p>Camarão empanado em panko, mix de alfaces, tomate-cereja, manga e parmesão.</p><p class="dish-price">R$ 59,00</p></article>
+<article class="dish"><img src="img/prato-foto-06.webp" alt="" width="640" height="640" style="clip-path: ellipse(47% 47% at 50% 50.3%)" loading="lazy"><p class="eyebrow">Saladas</p><h3>Salada de frango com ricota</h3><p>Filé de frango em tiras, ricota ralada, alfaces, cenoura, milho, ervilha e gergelim.</p><p class="dish-price">R$ 44,00</p></article>
+<article class="dish"><img src="img/arroz-prato.webp" alt="" width="768" height="768" style="clip-path: ellipse(48.6% 48.1% at 50% 50.4%)" loading="lazy"><p class="eyebrow">Para compartilhar</p><h3>Arroz cremoso de camarão · 3 pessoas</h3><p>Arroz cremoso com filés de camarão e camarões graúdos empanados.</p><p class="dish-price">R$ 179,00</p></article>
+<article class="dish" data-list-only><img src="img/feijoada-completa.webp" alt="" width="600" height="450" loading="lazy"><p class="eyebrow">Para compartilhar</p><h3>Feijoada completa</h3><p>Arroz, couve à mineira, torresmo, laranja, costeleta suína, farofa e vinagrete. Serve até 3 pessoas.</p><p class="dish-price">R$ 129,00</p></article>
+<article class="dish"><img src="img/prato-foto-09.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.6% 45.6% at 50% 50%)" loading="lazy"><p class="eyebrow">Para compartilhar</p><h3>Frango à parmegiana · 3 pessoas</h3><p>Com espaguete e purê de macaxeira gratinado.</p><p class="dish-price">R$ 149,00</p></article>
+<article class="dish"><img src="img/prato-foto-10.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.5% 45.5% at 50% 50%)" loading="lazy"><p class="eyebrow">Para compartilhar</p><h3>Picanha da Mariazinha · 3 pessoas</h3><p>Picanha argentina fatiada, creme de gorgonzola, cebola crocante e batata palito.</p><p class="dish-price">R$ 209,00</p></article>
+<article class="dish"><img src="img/prato-foto-11.webp" alt="" width="640" height="640" style="clip-path: ellipse(47.2% 47.2% at 50% 50%)" loading="lazy"><p class="eyebrow">Para compartilhar</p><h3>Maminha argentina na chapa · 3 pessoas</h3><p>Com queijo gruyère, arroz biro-biro, feijão tropeiro, fritas e cebola na brasa.</p><p class="dish-price">R$ 189,00</p></article>
+<article class="dish"><img src="img/prato-foto-12.webp" alt="" width="640" height="640" style="clip-path: ellipse(46.6% 46.6% at 50% 50%)" loading="lazy"><p class="eyebrow">Para compartilhar</p><h3>Arrumadão · 3 pessoas</h3><p>Feijão verde, charque frita, carne de sol em cubos e purê de macaxeira.</p><p class="dish-price">R$ 159,00</p></article>
+<article class="dish"><img src="img/prato-foto-13.webp" alt="" width="640" height="640" style="clip-path: ellipse(44.7% 44.7% at 50% 50%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Fritas cobertas com costela desfiada ao barbecue</h3><p>Batatas fritas crocantes com costela suína desfiada.</p><p class="dish-price">R$ 39,90</p></article>
+<article class="dish"><img src="img/prato-foto-14.webp" alt="" width="640" height="640" style="clip-path: ellipse(44.7% 44.7% at 50% 50%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Porção de fritas</h3><p class="dish-price">R$ 26,00</p></article>
+<article class="dish"><img src="img/prato-foto-15.webp" alt="" width="640" height="640" style="clip-path: ellipse(46% 44.8% at 50% 50%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Coxão de galinha</h3><p>Com recheio cremoso de frango.</p><p class="dish-price">R$ 24,00</p></article>
+<article class="dish" data-list-only><img src="img/torresmo-pururuca.webp" alt="" width="588" height="441" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Torresmo pururuca</h3><p>Com limão e farofa da casa.</p><p class="dish-price">R$ 38,00</p></article>
+<article class="dish"><img src="img/prato-foto-17.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.4% 44.9% at 50% 50.7%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Kibe</h3><p class="dish-price">R$ 19,00</p></article>
+<article class="dish" data-list-only><img src="img/panelinha-sarapatel.webp" alt="" width="597" height="448" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Panelinha de sarapatel</h3><p>Com farofinha de cebola, vinagrete e torrada da casa.</p><p class="dish-price">R$ 45,00</p></article>
+<article class="dish"><img src="img/prato-foto-18.webp" alt="" width="640" height="640" style="clip-path: ellipse(46.2% 46.2% at 50% 50%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Lagostinha grelhada</h3><p>Três unidades finalizadas na manteiga de ervas.</p><p class="dish-price">R$ 119,00</p></article>
+<article class="dish"><img src="img/prato-foto-19.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.7% 45.7% at 50% 50%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Croquete de costela</h3><p>Cinco croquetes de costelinha ao barbecue, com batata crocante e aioli verde.</p><p class="dish-price">R$ 49,00</p></article>
+<article class="dish"><img src="img/prato-foto-21.webp" alt="" width="640" height="640" style="clip-path: ellipse(44.6% 44.6% at 50% 50%)" loading="lazy"><p class="eyebrow">Entradas e porções</p><h3>Pão de alho</h3><p>Uma unidade com queijo provolone maçaricado.</p><p class="dish-price">R$ 18,00</p></article>
+<article class="dish"><img src="img/prato-foto-22.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.9% 45.9% at 50% 50%)" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Filé de camarão ao molho de ervas</h3><p>Camarões graúdos refogados com azeite trufado e especiarias de ervas.</p><p class="dish-price">R$ 94,00</p></article>
+<article class="dish"><img src="img/prato-foto-23.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.7% 45.7% at 50% 50%)" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Camarão ao alho e óleo (sem cabeça)</h3><p>Camarões com casca, salteados no alho e azeite temperado.</p><p class="dish-price">R$ 64,00</p></article>
+<article class="dish"><img src="img/prato-foto-24.webp" alt="" width="640" height="640" style="clip-path: ellipse(49.8% 49.8% at 50% 50%)" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Picanha magnífica</h3><p>Picanha grelhada e fatiada, gorgonzola, cebola crocante e batata palito.</p><p class="dish-price">R$ 110,00</p></article>
+<article class="dish"><img src="img/prato-foto-25.webp" alt="" width="640" height="640" style="clip-path: ellipse(47.2% 47.2% at 50% 50.3%)" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Maminha argentina com queijo gruyère</h3><p>Servida na chapa quente, com fritas crocantes.</p><p class="dish-price">R$ 99,00</p></article>
+<article class="dish"><img src="img/prato-foto-26.webp" alt="" width="640" height="640" style="clip-path: ellipse(45.8% 45.8% at 50% 50%)" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Carne de sol</h3><p>Chapa de carne de sol, queijo coalho empanado e batata frita.</p><p class="dish-price">R$ 78,00</p></article>
+<article class="dish"><img src="img/prato-foto-27.webp" alt="" width="640" height="640" style="clip-path: ellipse(46% 46% at 50% 50%)" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Costelinha BBQ</h3><p>Costelinha suína ao barbecue com batata palito crocante.</p><p class="dish-price">R$ 64,00</p></article>
+<article class="dish" data-list-only><img src="img/file-com-fritas.webp" alt="" width="589" height="442" loading="lazy"><p class="eyebrow">Petiscos</p><h3>Filé com fritas</h3><p>Cubos de filé mignon em molho escuro, com batatas finas e crocantes.</p><p class="dish-price">Preço a confirmar</p></article>
+<article class="dish" data-list-only><img src="img/carne.webp" alt="" width="215" height="162" loading="lazy"><p class="eyebrow">Individual</p><h3>Carne de sol com baião de dois</h3><p>Com queijo coalho.</p></article>
+<article class="dish" data-list-only><img src="img/feijoada.webp" alt="" width="215" height="162" loading="lazy"><p class="eyebrow">Individual</p><h3>Feijoada individual</h3><p>Com ovo frito, arroz, couve e farofa.</p></article>
+<article class="dish" data-list-only><img src="img/pudim.webp" alt="" width="215" height="162" loading="lazy"><p class="eyebrow">Sobremesa</p><h3>Pudim com farofa de amendoim</h3></article>
+    </div>
+  </div>
+</section>
+<section class="reviews" id="depoimentos" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <h2 id="reviews-title">Quem já veio conta</h2>
+    <p>Avaliações de clientes no Google</p>
+    <ul class="review-track" tabindex="0" aria-label="Depoimentos de clientes">
+      <li><figure><blockquote>“Ambiente muito agradável, garçons educados e solícitos e a comida perfeita.”</blockquote><figcaption>Rita Clemente</figcaption></figure></li>
+      <li><figure><blockquote>“A comida estava com uma ótima apresentação e sabor. O atendimento foi o diferencial para querer voltar ao restaurante, especialmente o garçom Fernando.”</blockquote><figcaption>Virgínia Íone<span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span></figcaption></figure></li>
+      <li><figure><blockquote>“Comida bem servida e saborosa. Atendimento maravilhoso do Fernando.”</blockquote><figcaption>Mayara Fernanda</figcaption></figure></li>
+      <li><figure><blockquote>“Ambiente agradável, confortável e comida excelente.”</blockquote><figcaption>Gabriel Miranda<span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span></figcaption></figure></li>
+      <li><figure><blockquote>“Fomos muito bem atendidos pelo Eduardo. Atencioso e prestativo. O prato estava uma delícia.”</blockquote><figcaption>Ariadine Rodrigues<span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span></figcaption></figure></li>
+      <li><figure><blockquote>“A localização é ótima, embora o estacionamento seja meio difícil.”</blockquote><figcaption>Augusto Diniz<span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span></figcaption></figure></li>
+      <li><figure><blockquote>“Comida e ambiente maravilhoso. As crianças adoraram o espaço kids.”</blockquote><figcaption>Kassandra Mendes<span class="review-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span></figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+<section class="reservation" id="reserva" aria-labelledby="reserve-title">
+  <div class="wrap">
+    <h2 id="reserve-title">Tem lugar à mesa</h2>
+    <p>Escolha como você quer visitar o Mariazinha.</p>
+    <div class="reserve-options" role="group" aria-label="Opções de atendimento">
+      <button type="button" data-reserve-mode="reservation" aria-controls="reserve-form" aria-pressed="false"><strong>Fazer reserva de mesa</strong><span>Escolha uma data e um horário</span></button>
+      <button type="button" data-reserve-mode="waitlist" aria-controls="reserve-form" aria-pressed="false"><strong>Entrar na lista de espera</strong><span>Informe o tamanho do seu grupo</span></button>
+    </div>
+    <form id="reserve-form" aria-labelledby="reserve-form-title" aria-describedby="reserve-demo" hidden>
+      <h3 id="reserve-form-title" tabindex="-1"></h3>
+      <p class="demo" id="reserve-demo">Prévia de teste. Use dados fictícios.</p>
+      <fieldset id="reserve-details" class="reserve-rows" aria-label="Detalhes da visita">
+        <label data-scheduled>Dia da reserva<input type="date" name="date" required></label>
+        <label data-scheduled>Salão ou ambiente<select name="room" required><option value="interno">Salão interno</option><option value="clube">Área clube</option><option value="varanda">Varanda</option></select></label>
+        <label>Pessoas<select name="guests" required><option value="">Selecione</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></label>
+        <label data-scheduled>Horário<select name="time" required><option value="">Selecione</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option></select></label>
+      </fieldset>
+      <fieldset id="reserve-contact" class="reserve-rows" aria-label="Dados de contato" hidden disabled>
+        <label>Nome<input name="guest" type="text" maxlength="80" required></label>
+        <label>WhatsApp com DDD<input name="phone" type="tel" inputmode="tel" maxlength="18" placeholder="(81) 99999-9999" required></label>
+      </fieldset>
+      <div class="reserve-actions">
+        <button type="button" id="reserve-back" hidden>Voltar</button>
+        <button class="button" type="submit">Continuar</button>
+      </div>
+      <p id="reserve-result" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer" id="localizacao">
+  <div class="wrap footer-grid">
+    <div class="footer-info">
+      <a href="#inicio" class="brand"><img src="img/logo.webp" width="52" height="52" alt=""><span>Mariazinha</span></a>
+      <h2>Como chegar</h2>
+      <address>Rua Afonso Celso, 264 · Tamarineira<br>Recife, PE</address>
+      <p>Todos os dias a partir das 11h</p>
+      <div class="footer-links">
+        <a class="button footer-instagram" href="https://www.instagram.com/mariazinhabar/">Instagram <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-location">
+      <iframe class="footer-map" title="Localização do Mariazinha no Google Maps" src="https://maps.google.com/maps?q=Mariazinha%20Bar%20e%20Comida%20Brasileira%2C%20Rua%20Afonso%20Celso%2C%20264%2C%20Tamarineira%2C%20Recife%2C%20PE&amp;z=16&amp;output=embed" width="640" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <a class="button" href="https://www.google.com/maps/dir/?api=1&amp;destination=Mariazinha%20Bar%20e%20Comida%20Brasileira%2C%20Rua%20Afonso%20Celso%2C%20264%2C%20Tamarineira%2C%20Recife%2C%20PE">Traçar rota <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</footer>
+</div>
+</body></html>
